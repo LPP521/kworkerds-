@@ -1,8 +1,8 @@
 ##  重复了一点没有关系，我的服务器每一分钟会新建一个挖矿进程，所以要在一分钟之内执行完毕 
-##  其中开头的主机名称更换为自己的名称即可
+##  其中开头的主机名称更换为自己的名称,全部复制即可
 ##  有的地方如果root权限不够，要自己添加chattr修改权限，（一般不用）
 
-``
+<code>
 ps aux|grep "iZkyo9knm39v08Z"|grep -v grep|awk '{print $2}'|xargs kill -9
 
 chattr -i /etc/cron.d/root
@@ -57,4 +57,4 @@ rm -f /tmp/kworkerds*
 rm -f /tmp/1.so
 rm -f /var/tmp/wc.conf
 rm -f tmp/wc.conf
-``
+</code>
