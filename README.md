@@ -3,7 +3,7 @@
 ##  有的地方如果root权限不够，要自己添加chattr修改权限，（一般不用）
 
 <code>
-ps aux|grep "iZkyo9knm39v08Z"|grep -v grep|awk '{print $2}'|xargs kill -9
+ps aux|grep "VM_0_11_centos"|grep -v grep|awk '{print $2}'|xargs kill -9
 
 chattr -i /etc/cron.d/root
  echo "" > /etc/cron.d/root
